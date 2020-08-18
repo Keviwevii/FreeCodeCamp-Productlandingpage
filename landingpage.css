@@ -1,0 +1,214 @@
+body {
+  
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  /*
+  background: -moz-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 25%, rgba(5,193,255,1) 50%, rgba(255,255,0,1) 75%, rgba(255,0,0,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,0,0,1)), color-stop(25%, rgba(255,255,0,1)), color-stop(50%, rgba(5,193,255,1)), color-stop(75%, rgba(255,255,0,1)), color-stop(100%, rgba(255,0,0,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 25%, rgba(5,193,255,1) 50%, rgba(255,255,0,1) 75%, rgba(255,0,0,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 25%, rgba(5,193,255,1) 50%, rgba(255,255,0,1) 75%, rgba(255,0,0,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 25%, rgba(5,193,255,1) 50%, rgba(255,255,0,1) 75%, rgba(255,0,0,1) 100%); /* ie10+ */
+background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 25%, rgba(5,193,255,1) 50%, rgba(255,255,0,1) 75%, rgba(255,0,0,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#ff0000',GradientType=1 ); /* ie6-9 */
+
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  position: fixed;
+  margin: 0px;
+  background-color: white;
+  height: 100px;
+}
+#header-img {
+  width: 20%;
+  height: 100px;
+  margin-left: -10px;
+}
+#company-name {
+  width: 300px;
+  height: 65px;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+#nav-bar {
+  flex-direction: row;
+  text-align: right;
+  width: 100%;
+  background-color: white;
+  padding-top: 10px;
+  
+}
+#back-img img {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  z-index: -1;
+  top: 250px;
+}
+#hands img {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  box-shadow: 5px 5px 5px red, 10px 10px 5px orange, 15px 15px 5px yellow,
+    20px 20px 5px green, 25px 25px 5px blue, 30px 30px 5px purple;
+}
+#nav-bar li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 50px;
+}
+#spacer {
+  height: 400px;
+}
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+  #nav-bar {
+    top: 0px;
+    text-align: center;
+    width: 100%;
+  }
+  #nav-bar li {
+    margin-right: 0px;
+  }
+  .first-icon {
+    flex-direction: column;
+  }
+  .images{
+      display: flex;
+      flex-direction: column;
+  }
+}
+#statement {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+h2, h3{
+  text-align: center;
+}
+.first-icon, .sec-icon, .third-icon{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 10%;
+    align-items: center;
+
+}
+.first-icon img, .sec-icon img, .third-icon img{
+    height: 40%;
+    width: 20%;
+    margin-right: 10%;
+}
+#video{
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 10%;
+
+}
+
+.image-1{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+.image-1 img{
+    width: 40%;
+    height: 50%;
+    margin-right: 20px;
+}
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%  / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  
+  .product > .level {
+    background-color: white;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  
+  
+  .product > ol {
+    margin: 15px 0;
+  }
+  
+  .product > ol > li {
+    padding: 5px 0;
+  }
+  
+  .product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+  }
+  
+  .product > button:hover {
+    background-color: orange;
+    transition: background-color 1s;
+  }
+  
+  @media (max-width: 800px) {
+    #pricing {
+      flex-direction: column;
+    }
+    .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+.newsletter{
+    display: flex;
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+}
+  
+#footer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    text-align: right;
+    float: right;
+    width: 100%;
+
+}
+#footer li{
+    display: inline;
+    margin-right: 10px;
+}
